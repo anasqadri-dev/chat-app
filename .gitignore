@@ -1,0 +1,69 @@
+# ─── General ──────────────────────────────────────────────────────────────────
+HELP.md
+
+# ─── Maven ────────────────────────────────────────────────────────────────────
+target/
+.mvn/wrapper/maven-wrapper.jar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Keep nested target/build directories under src
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ─── Build Output ─────────────────────────────────────────────────────────────
+build/
+*.war
+*.jar
+*.class
+
+# ─── Spring Boot ──────────────────────────────────────────────────────────────
+spring.log
+application-local.properties
+application-prod.properties
+application-secrets.properties
+
+# ─── Environment & Credentials ────────────────────────────────────────────────
+.env
+*.env
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── IntelliJ IDEA ────────────────────────────────────────────────────────────
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ─── Eclipse / STS ────────────────────────────────────────────────────────────
+.classpath
+.project
+.settings/
+.factorypath
+.apt_generated
+.springBeans
+.sts4-cache
+bin/
+
+# ─── NetBeans ─────────────────────────────────────────────────────────────────
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ─── VS Code ──────────────────────────────────────────────────────────────────
+.vscode/
+
+# ─── OS Files ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
