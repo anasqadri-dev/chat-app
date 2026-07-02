@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Chat App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="header-content">
+                <div class="header-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1>My Chat App</h1>
+                    <p class="subtitle">Real-time Messaging</p>
+                </div>
+                <div class="status-dot"></div>
+            </div>
+        </div>
+
+        <!-- Chat Messages -->
+        <div id="chat-box" class="chat-messages">
+            <div class="welcome-message">
+                <p>Welcome to My Chat App</p>
+                <span>Start a conversation...</span>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="chat-input-area">
+            <div class="input-row">
+                <div class="input-group">
+                    <input id="sender-input" type="text" class="input-field" placeholder="Your Name" />
+                    <label class="input-label">Name</label>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group" style="flex: 1;">
+                    <input id="message-input" type="text" class="input-field" placeholder="Type your message..." />
+                    <label class="input-label">Message</label>
+                </div>
+                <button id="send-message" class="send-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="currentColor"/>
+                    </svg>
+                    Send
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.1.0-next/stomp.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
